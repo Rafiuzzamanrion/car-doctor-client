@@ -46,7 +46,7 @@ const Auth = ({children}) => {
         email:currentUser.email
     }
     // ------------------start access token part---------------------
-        fetch('https://car-doctor-server-inyegj4x9-rafiuzzamanrion.vercel.app/jwt',{
+        fetch('https://car-doctor-server-murex-iota.vercel.app/jwt',{
         method:'POST',
         headers:{'content-type':'application/json'},
         body:JSON.stringify(loggedUser)

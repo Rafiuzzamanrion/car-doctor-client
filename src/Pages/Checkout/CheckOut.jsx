@@ -26,7 +26,7 @@ const CheckOut = () => {
             service_id:_id,
             price: price
         }
-        fetch('https://car-doctor-server-inyegj4x9-rafiuzzamanrion.vercel.app/bookings',{
+        fetch('https://car-doctor-server-murex-iota.vercel.app/bookings',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(booking)

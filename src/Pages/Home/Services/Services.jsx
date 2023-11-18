@@ -15,7 +15,7 @@ const searchRef = useRef(null);
 
 useEffect(()=>{
  
-fetch(`https://car-doctor-server-inyegj4x9-rafiuzzamanrion.vercel.app/services?search=${search}&sort=${ascending? 'ascending':'descending'}`)
+fetch(`https://car-doctor-server-murex-iota.vercel.app/services?search=${search}&sort=${ascending? 'ascending':'descending'}`)
 .then(res => res.json())
 .then(data => {
     

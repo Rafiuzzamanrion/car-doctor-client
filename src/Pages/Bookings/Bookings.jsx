@@ -10,7 +10,7 @@ const Bookings = () => {
    
     const [bookings,setBookings] = useState([]);
     const navigate = useNavigate();
-    const url = `https://car-doctor-server-inyegj4x9-rafiuzzamanrion.vercel.app/bookings?email=${user?.email}`
+    const url = `https://car-doctor-server-murex-iota.vercel.app/bookings?email=${user?.email}`
 
     useEffect(()=>{
       //--------- after the url, this is the part of verifying authorization by access token------------
@@ -43,7 +43,7 @@ const Bookings = () => {
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
-          fetch(`https://car-doctor-server-inyegj4x9-rafiuzzamanrion.vercel.app/bookings/${id}`,{
+          fetch(`https://car-doctor-server-murex-iota.vercel.app/bookings/${id}`,{
             method:'DELETE'
           })
           .then(res => res.json())
@@ -70,7 +70,7 @@ const Bookings = () => {
     }
     // handle delete end
     const handleBookingConfirm = id =>{
-      fetch(`https://car-doctor-server-inyegj4x9-rafiuzzamanrion.vercel.app/bookings/${id}`,{
+      fetch(`https://car-doctor-server-murex-iota.vercel.app/bookings/${id}`,{
           method:'PATCH',
           headers: {'content-type':'application/json'},
           body:JSON.stringify({status:'confirm'})
