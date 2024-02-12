@@ -48,16 +48,19 @@ const handleSearch = () =>{
 </div>
 
         </div>
-        <div>
+       
+       <div className="flex flex-col items-center justify-center">
+       <div>
         <button onClick={()=> setAscending(!ascending)}  className="btn btn-outline btn-error">{ascending? 'Price : High to low':'Price : Low to high'} <BsFillArrowRightSquareFill/></button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-x-16">
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
             {
                 services.map(service => <ServiceCart key={service._id} service={service}></ServiceCart>)
             
             }
         </div>
+       </div>
         </div>
     );
 };
